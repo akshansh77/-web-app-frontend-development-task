@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/users');
+        const response = await fetch('https://backend-1qa4.onrender.com/api/users');
         const data = await response.json();
         setUsers(data);
         setLoading(false);
